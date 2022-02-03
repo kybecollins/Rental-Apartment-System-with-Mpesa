@@ -1,0 +1,45 @@
+{%extends 'base3.html'%}
+
+
+{%block content%}
+    <!-- <style type="text/css">
+        .content.middle{
+            align-items: center;
+            text-size-adjust: 12px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        form{
+            align-items: center;
+
+        } -->
+
+    </style> 
+    <div class="content">
+        <div class="middle">
+            <title><u><i>EDIT PROFILE</i></u></title>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit">Submit</button>
+
+            </form>
+            <br>
+        </div>
+        <!-- <div class="header">
+            <title><u><i>EDIT PROFILE</i></u></title>
+        </div>
+        <p>
+        <form method="POST">
+
+            {{form.as_p}}
+            <button type="submit">Submit</button>
+
+        </form> 
+        </p>
+        
+    </div> -->
+  
+
+{%endblock%}

@@ -1,0 +1,94 @@
+{% extends 'base2.html' %}
+{%load static%}
+
+{%block content%}
+
+<style type="text/css">
+        
+
+
+
+.about-section{
+    background: url("/static/chill.jpg") no-repeat left;
+    background-size: 55%;
+    background-color: #242524;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #242524;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+h1{
+    color: #dddbdb;
+}
+span{
+    color: #dddbdb;
+}
+.text{
+    font-size: 16px;
+    color: #dddbdb;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="text">
+                Ushujaa rentals is a Rental property management system that helps Landlords and Tenats to bring out the full potential of their rental properties. Kodisher is available now, online and is easy to use, affordable and is integrated with mobile money payment methods
+            </p>
+            <div class="skills">
+                <span>@ushujaa rentals</span>
+                <span>Apartment system</span>
+                <span>Easy Online payment</span>
+            </div>
+        </div>
+    </div>
+</body>
+{%endblock%}

@@ -1,0 +1,30 @@
+{%extends 'base3.html'%}
+
+
+{%block content%}
+    <div class="content">
+
+        <!-- <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Mpesa Receipt</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Date</th>
+            </tr>
+
+            {%for receipt in receipts%}
+            <tr>
+                <td>{{receipt.CheckoutRequestID}}</td>
+            </tr>
+            
+
+            {%endfor%}
+        </table> -->
+        {%for receipt in receipts%}
+        {{receipt.tenant}}
+        {%endfor%}
+
+    </div>
+{%endblock%}
